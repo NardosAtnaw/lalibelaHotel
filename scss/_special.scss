@@ -1,0 +1,584 @@
+.history {
+  .container {
+    .space-description {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      .total-space {
+        display: grid;
+        place-items: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        p {
+          color: $fourth-color;
+          font-weight: bold;
+        }
+        .space-desc {
+          h3 {
+            margin-top: 0.2rem;
+            color: $fourth-color;
+            font-size: 0.5rem;
+          }
+        }
+      }
+      .line {
+        img {
+          width: 0.6rem;
+          height: 2rem;
+          margin-top: 0rem;
+        }
+      }
+    }
+    .book-now {
+      .book-title {
+        margin-bottom: 1rem;
+        color: gray;
+        text-align: center;
+        h3 {
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
+        p {
+          margin-top: 0.4rem;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+.events {
+  .container {
+    .event-title {
+      margin-top: 2rem;
+      h3 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      .titles {
+        display: flex;
+        justify-content: center;
+        ul {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: center;
+          li {
+            font-weight: bold;
+            margin-right: 1rem;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    .event-all {
+      .wedding {
+        .wedding-img {
+          display: grid;
+          place-content: center;
+
+          img {
+            width: 20rem;
+          }
+        }
+        .wedding-desc {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          background-color: $primary-color;
+          .decor {
+            position: relative;
+            img {
+              width: 3rem;
+              position: absolute;
+              // margin-left: 15rem;
+              right: 0;
+              top: -1rem;
+              animation: rotate 10s linear  infinite;
+
+            }
+            @keyframes rotate {
+              0%{
+                transform: rotateZ(0deg);
+              }
+
+              45%{
+                transform: rotateZ(180deg);
+              }
+             
+              100%{
+                transform: rotateZ(360deg);
+              }
+
+
+
+
+            }
+          }
+          h3 {
+            padding: 10px;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+          p {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+            color: #fff;
+          }
+          .btn {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .outside-event {
+        .outside-img {
+          display: grid;
+          place-content: center;
+          margin-top: 0.5rem;
+
+          img {
+            width: 20rem;
+          }
+        }
+        .outside-desc {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          background-color: $primary-color;
+          .decor {
+            position: relative;
+            img {
+              width: 3rem;
+              position: absolute;
+              // margin-left: 15rem;
+              right: 0;
+              top: -1rem;
+              animation: rotate 10s linear  infinite;
+
+            }
+            @keyframes rotate {
+              0%{
+                transform: rotateZ(0deg);
+              }
+
+              45%{
+                transform: rotateZ(180deg);
+              }
+             
+              100%{
+                transform: rotateZ(360deg);
+              }
+
+
+
+
+            }
+          }
+          h3 {
+            padding: 10px;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+          p {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+            color: #fff;
+          }
+          .btn {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive($md) {
+  .history {
+    .container {
+      .space-description {
+        .total-space {
+          p {
+            font-size: 1.5rem;
+          }
+          .space-desc {
+            h3 {
+              margin-top: 0.5rem;
+              font-size: 1rem;
+            }
+          }
+        }
+        .line {
+          img {
+            width: 0.6rem;
+            height: 3rem;
+            margin-top: 0rem;
+          }
+        }
+      }
+    }
+  }
+
+  .events {
+    .container {
+      .event-title {
+        margin-top: 3rem;
+        h3 {
+          font-size: 1.5rem;
+        }
+        .titles {
+          ul {
+            li {
+              margin-top: 1.5rem;
+              margin-right: 2rem;
+              font-size: 1rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .event-all {
+        .wedding {
+          display: flex;
+          .wedding-img {
+            display: grid;
+            place-content: center;
+
+            img {
+              width: 25rem;
+            }
+          }
+          .wedding-desc {
+            width: 75%;
+            margin-top: 4rem;
+
+            margin-left: -3rem;
+
+            .decor {
+              position: relative;
+              img {
+                width: 5rem;
+
+                top: -2rem;
+              }
+            }
+            h3 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+            .btn {
+              margin-left: 1rem;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        .outside-event {
+          display: flex;
+          margin-bottom: 2rem;
+          .outside-img {
+            img {
+              width: 25rem;
+            }
+          }
+          .outside-desc {
+            width: 75%;
+            margin-top: 4rem;
+
+            margin-left: -3rem;
+            .decor {
+              position: relative;
+              img {
+                width: 5rem;
+
+                top: -2rem;
+              }
+            }
+            h3 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive($xl) {
+  .history {
+   
+    img{
+      width: 100%;
+      height: 5rem;
+      margin-top: 3rem;
+    }
+    .container {
+      .history-title{
+        h3{
+          font-size: 2rem;
+        }
+        .history-desc{
+          font-size: 1.2rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+        }
+      }
+    
+      .space-description {
+        .total-space {
+          p {
+            font-size: 1.5rem;
+          }
+          .space-desc {
+            h3 {
+              margin-top: 0.5rem;
+              font-size: 1rem;
+            }
+          }
+        }
+        .line {
+          img {
+            width: 0.6rem;
+            height: 3rem;
+            margin-top: 0rem;
+          }
+        }
+      }
+      .book-now {
+        .book-title {
+       margin-top: 2rem;
+          h3 {
+            font-size: 1rem;
+           
+          }
+          p {
+           
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .events {
+    .container {
+      .event-title {
+        margin-top: 3rem;
+        h3 {
+          font-size: 1.5rem;
+        }
+        .titles {
+          ul {
+            li {
+              margin-top: 1.5rem;
+              margin-right: 2rem;
+              font-size: 1rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .event-all {
+ 
+        .wedding {
+          display: flex;
+          .wedding-img {
+            display: grid;
+            place-content: center;
+
+            img {
+              width: 35rem;
+            }
+          }
+          .wedding-desc {
+            width: 55%;
+            margin-top: 4rem;
+            height: 16rem;
+            margin-left: -3rem;
+
+            .decor {
+              position: relative;
+              img {
+                width: 5rem;
+                top: -2rem;
+               
+
+              }
+          
+            }
+            h3 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+            .btn {
+              margin-top: 2rem;
+            }
+          }
+        }
+        .outside-event {
+          display: flex;
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          .outside-img {
+            img {
+              width: 35rem;
+       
+
+            }
+          }
+          .outside-desc {
+            width: 55%;
+            margin-top: 4rem;
+            height: 16rem;
+            margin-left: -3rem;
+            .decor {
+              position: relative;
+              img {
+                width: 5rem;
+                top: -2rem;
+               
+              }
+              
+            }
+            h3 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+            .btn {
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive($xxl) {
+
+
+  .events {
+    .container {
+      .event-title {
+        margin-top: 3rem;
+        h3 {
+          font-size: 1.5rem;
+        }
+        .titles {
+
+          display: flex;
+            justify-content: center;
+          ul {
+            
+            li {
+             margin-top: 3rem;
+              margin-right: 5rem;
+              margin-left: 5rem;
+              margin-bottom: 3rem;
+           
+            }
+          }
+        }
+      }
+
+      .event-all {
+        margin-left: 10rem;
+        margin-right: 10rem;
+
+        .wedding {
+          display: flex;
+          .wedding-img {
+            display: grid;
+            place-content: center;
+
+            img {
+              width: 35rem;
+            }
+          }
+          .wedding-desc {
+            width: 45%;
+            margin-top: 4rem;
+            height: 16rem;
+            margin-left: -3rem;
+
+            .decor {
+              position: relative;
+              img {
+                width: 5rem;
+                top: -2rem;
+               
+
+              }
+          
+            }
+            h3 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+            .btn {
+              margin-top: 2rem;
+            }
+          }
+        }
+        .outside-event {
+          display: flex;
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          .outside-img {
+            img {
+              width: 35rem;
+       
+
+            }
+          }
+          .outside-desc {
+            width:45%;
+            margin-top: 4rem;
+            height: 16rem;
+            margin-left: -3rem;
+            .decor {
+              position: relative;
+              img {
+                width: 5rem;
+                top: -2rem;
+               
+              }
+              
+            }
+            h3 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+            .btn {
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

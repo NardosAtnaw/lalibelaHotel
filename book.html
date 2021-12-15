@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> -->
+
+    <title>Book</title>
+   
+
+
+  </head>
+
+  <body>
+    <header class="book-header">
+
+    </header>
+    <section class="calltoaction2">
+      <div class="container">
+        <div class="call-title">
+          <h3>Book In Our Hotel</h3>
+          <p>
+            Enim commodo quis nulla cillum in. Ipsum excepteur voluptate cillum
+            elit est proident ea consequat velit do dolore deserunt. Officia
+            amet.
+          </p>
+        
+        </div>
+      </div>
+    </section>
+    <section class="book">
+      <div class="container">
+        <div class="moto">
+          <div class="line">
+            <div class="moto-img">
+              <img src="./Image/line.svg" alt="" />
+            </div>
+
+            <div class="moto-des">
+              <h4>In the heart of the city, gracious hospitality.</h4>
+            
+            </div>
+
+            
+          </div>
+
+        <div class="back-img">
+          <img src="./Image/glue3.svg" alt="">
+        </div>
+        </div>
+        <form class="book-form" action="">
+          <div class="book-info">
+            <p>Fill out the form below to reserve our hotel; be sure to include your email address, as well as your arrival, departure, and number of guests.Thank you for choosing us!</p>
+          </div>
+          <div class="form-group">
+          
+            <div class="grid">
+              <div class="col-1-4 col-1-4-sm">
+                <div class="controls">
+                  <input type="email" class="floatLabel" name="arrive" placeholder="lalibella@gmail.com">
+                  <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;</label>
+                </div>      
+              </div>
+            <div class="col-1-4 col-1-4-sm">
+              <div class="controls">
+                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;</label>
+              </div>      
+            </div>
+            <div class="col-1-4 col-1-4-sm">
+              <div class="controls">
+                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;</label>
+              </div>      
+            </div>
+            <div class="col-1-3 col-1-3-sm">
+              <div class="controls">
+                
+                <i class="fa fa-sort" ></i>
+                <select class="floatLabel">
+                  <option value="blank"selected>Guest</option>
+                  <option value="blank"></option>
+                  <option value="1">1</option>
+                  <option value="2" >2</option>
+                  <option value="3">3</option>
+                </select>
+               
+              </div>      
+            </div>
+              </div>
+              <div class="grid">
+       
+   
+             </div>
+             
+          </div>
+          <div class="grid row ">
+      
+            <button class="btn btn-secondary" href="book.html">Book Now
+            </button>
+           </div>
+       
+        </form>
+      </div>
+    </section>
+    <!-- <section class="lists">
+      <div class="container">
+        <ul>
+          <li><a href="#">Room</a></li>
+          <li><a href="#">Suites</a></li>
+          <li><a href="#">Double Room</a></li>
+          <li><a href="#">Deluxe</a></li>
+        </ul>
+      
+      </div>
+      <img src="./Image/glue1.svg" alt="">
+    </section> -->
+    <section class="book-room">
+      <div class="container">
+        <div class="rooms" id="item1">
+          <div class="room">
+            <img class="room-img" src="./Image/bed.JPG" alt="">
+            <div class="room-des">
+              <h3>
+                Suites Room
+              </h3>
+              <p>Guest room, 1 King wall bed</p>
+              <button onclick="addselected(item1)" class="btn btn-fourth added" >Select Room</button >
+            </div>
+          </div>
+          <div class="room">
+            <img src="./Image/bed.JPG" alt="">
+            <div class="room-des">
+              <h3>
+               Deluxe Room
+              </h3>
+              <p>Guest room, 1 King wall bed</p>
+              <button  class="btn btn-fourth added" >Select Room</button >
+            </div>
+          </div>
+          <div class="room">
+            <img src="./Image/bed.JPG" alt="">
+            <div class="room-des">
+              <h3>
+                Single Room
+              </h3>
+              <p>Guest room, 1 King wall bed</p>
+              <button  class="btn btn-fourth added" >Select Room</button >
+            </div>
+          </div>
+          <div class="room">
+            <img src="./Image/bed.JPG" alt="">
+            <div class="room-des">
+              <h3>
+                Double Room
+              </h3>
+              <p>Guest room, 1 King wall bed</p>
+              <button  class="btn btn-fourth added" >Select Room</button >
+            </div>
+          </div>
+          <div class="room">
+            <img src="./Image/bed.JPG" alt="">
+            <div class="room-des">
+              <h3>
+                Kings Room
+              </h3>
+              <p>Guest room, 1 King wall bed</p>
+              <button  class="btn btn-fourth added" >Select Room</button >
+            </div>
+          </div>
+          <div class="room">
+            <img src="./Image/bed.JPG" alt="">
+            <div class="room-des">
+              <h3>
+                Guest Room
+              </h3>
+              <p>Guest room, 1 King wall bed</p>
+              <button class="btn btn-fourth added">Select Room</button >
+            </div>
+        
+          </div>
+          <!-- <div class="more-btn">
+            <img src="./Image/drop.svg" alt="">
+          </div> -->
+        </div>
+       
+        <!-- <div class="room-selected">
+          <h3>
+            Selected room will be displayed here and also you can remove a room! 
+          </h3>
+          <div class="title">
+
+          </div>
+
+        </div> -->
+      </div>
+
+    </section>
+    
+
+    <footer class="footer-general">
+
+    </footer>
+<script src="./js/app.js" type="module"></script>
+  </body>
+</html>

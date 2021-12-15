@@ -1,0 +1,634 @@
+.book-header {
+  overflow-x: hidden;
+
+  position: relative;
+  z-index: 999;
+  background-color: $primary-color;
+
+  .container {
+    width: 100%-10%;
+    height: 100%;
+    img {
+      margin-top: 0.5rem;
+      width: 9rem;
+      margin-left: 0.5rem;
+    }
+    .nav {
+     
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-container {
+        background: $primary-color;
+        z-index: 999999;
+        position: fixed;
+        width: 100vw;
+        margin-top: 7vh;
+        height: 30vh;
+        top: 0;
+        right: -100vw;
+        transition: all 0.3s linear;
+        .close-btn {
+        
+          display: flex;
+          justify-content: right;
+          color: $thrid-color;
+        }
+
+        ul {
+          background: $primary-color;
+          // display: grid;
+          // grid-template-columns: 1fr 1fr;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 50%;
+
+          padding-left: 3rem;
+          list-style: none;
+          li {
+            margin-bottom: 0.51rem;
+            a {
+              color: $thrid-color;
+              font-size: 1rem;
+              text-decoration: none;
+              padding: 7px 13px;
+              border-radius: 3px;
+              .admin-img {
+                width: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .menu {
+        img {
+          margin-right: 0.5rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
+.calltoaction2 {
+  height: 40vh;
+  overflow-x: hidden;
+  background: url(../Image/team.jpg) no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center center;
+  position: relative;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .call-title {
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+    color: #fff;
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+    }
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+}
+.book {
+  background-color: $thrid-color;
+
+  .container {
+    .moto {
+      display: grid;
+      place-items: center;
+
+      .line {
+        margin-top: 3rem;
+        display: flex;
+        .moto-img {
+          img {
+            width: 0.6rem;
+            height: 3rem;
+            margin-top: 0rem;
+          }
+        }
+        .moto-des {
+          margin-left: 0.5rem;
+          h4 {
+            font-weight: 900;
+            font-size: 1.3rem;
+            color: $primary-color;
+          }
+        }
+      }
+      .back-img {
+        display: flex;
+        margin-left: 10rem;
+
+        margin-top: -7rem;
+        img {
+          width: 10rem;
+        }
+      }
+    }
+    .book-form {
+      display: grid;
+      place-items: center;
+      .book-info{
+        // margin-top: 2rem;
+        text-align: center;
+        font-size: .8rem;
+        color:gray;
+      }
+      .form-group {
+        margin-top: 1rem;
+        .grid {
+          div {
+            display: grid;
+            place-items: center;
+            .controls {
+              display: flex;
+              margin-top: 1rem;
+              .floatLabel {
+                border: none;
+                padding: 8px 8px;
+                width: 12rem;
+                height: 3rem;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+.lists {
+  margin-top: 2rem;
+  .container {
+    width: 100%-5%;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        font-weight: bold;
+        margin-right: 1rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  img {
+    margin-top: 0.5rem;
+    height: 3rem;
+    width: 100%;
+  }
+}
+
+.book-room {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  .container {
+    display: flex;
+    .rooms {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr ;
+      gap: 2rem;
+      .room {
+       
+        img {
+        
+          width: 13rem;
+        }
+        .room-des {
+          text-align: center;
+          h3 {
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+          p {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      // .more-btn {
+      //   display: flex;
+      //   justify-content: center;
+      //   margin-top: 2rem;
+  
+      //   img {
+      //     width: 2rem;
+      //   }
+      // }
+    }
+ 
+    .room-selected{
+      margin-left: 1rem;
+      width: 80%;
+      height: 100vh;
+      // color: $thrid-color;
+      border: 2px solid $thrid-color;
+      border-radius: 2rem;
+      h3{
+        text-align: center;
+        font-size: .4rem;
+        color: $fourth-color;
+        margin-left: .3rem;
+        margin-right: .3rem;
+        
+        margin-top: .6rem;
+      }
+    }
+  }
+}
+@include responsive($md) {
+  .book-header {
+    .container {
+      img {
+        margin-top: 1rem;
+        width: 12rem;
+      }
+
+      .moto {
+        display: grid;
+        place-items: center;
+        margin-top: 8rem;
+        .line {
+          display: flex;
+          .moto-img {
+            img {
+              height: 4rem;
+            }
+          }
+          .moto-des {
+            h4 {
+              margin-left: 0.5rem;
+              font-size: 2rem;
+            }
+          }
+        }
+        .btn-flex {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+  .fixed-nav {
+    height: 5.5rem;
+  }
+  .calltoaction2 {
+  
+    .call-title {
+   
+      margin-top: 8rem;
+      
+      h3 {
+        font-size: 1.5rem;
+    
+      }
+      p {
+        margin-top: 1rem;
+    
+      }
+     
+    }
+  }
+  .book {
+    .container {
+      .moto{
+        .line{
+         
+     .moto-des{
+       h4{
+         font-size: 1.3rem;
+       }
+     }
+        }
+      }
+      .book-form {
+        .form-group {
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive($lg) {
+  .book {
+    .container {
+      .moto {
+        display: flex;
+        margin-left: 1.6rem;
+
+        .line {
+          margin-top: 3rem;
+          display: flex;
+         
+          .moto-img {
+            img {
+              width: 0.6rem;
+              // height: 4.5rem;
+              margin-top: 0rem;
+            }
+          }
+          .moto-des {
+            margin-left: 0.5rem;
+            h4 {
+            
+              font-weight: bold;
+              font-size: 2rem;
+              color: $primary-color;
+            }
+          }
+        }
+        .back-img {
+          margin-top: 0rem;
+          // margin-left: -.1rem;
+          img {
+            width: 10rem;
+          }
+        }
+      }
+
+      .book-form {
+        margin-top: 2rem;
+        .book-info{
+         
+          margin-left: 5rem;
+          margin-right: 5rem;
+        }
+        .form-group {
+          .grid {
+            display: flex;
+            // div {
+            //   .controls {
+
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+  .lists {
+    margin-top: 3rem;
+    .container {
+      width: 100%;
+      ul {
+       
+        li {
+          font-weight: bold;
+          margin-right: 4rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+    img {
+      margin-top: 2rem;
+      height: 3rem;
+      width: 100%;
+    }
+  }
+  .book-room {
+ 
+    .container {
+      .rooms {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+      }
+      .more-btn {
+        
+        margin-top: 5rem;
+  
+        img {
+          width: 3rem;
+        }
+      }
+      .room-selected{
+        
+        height: auto;
+       
+        h3{
+          text-align: center;
+          font-size: 1rem;
+          color: $fourth-color;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  .footer-general {
+    .container {
+      width: 100%-5%;
+      margin-top: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .footer-logo{
+        .footer-links{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+     
+    }
+  }
+}
+@include responsive ($xl){
+  .book-header {
+   
+    .container {
+     
+      height: 100%;
+      img {
+        margin-top: 0.5rem;
+        width: 13rem;
+        margin-left: 0.5rem;
+      }
+      .nav {
+           
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-container {
+          display: block;
+          background: transparent;
+          z-index: 999999;
+          position: static;
+          text-align: right;
+          margin-top: 0vh;
+          margin-right: 0.5rem;
+          width: auto;
+          height: auto;
+          top: 0;
+          right: 0vw;
+          transition: all 0.3s linear;
+          .close-btn {
+            display: none;
+          }
+          h2 {
+            margin-top: 1rem;
+            margin-left: 3rem;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            img {
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+              margin-top: 0.3rem;
+            }
+          }
+          ul {
+            color: #fff;
+            flex-direction: row;
+            top: 0em;
+            li {
+              display: inline-block;
+              line-height: 80px;
+              margin: 0 5px;
+              position: relative;
+
+              a {
+                color: #fff;
+                font-size: 1rem;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-decoration: none;
+
+                &:hover {
+                  font-size: 1.3rem;
+                  font-weight: bold;
+                  color: #fff;
+
+                  &::after {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .menu {
+          display: none;
+        }
+      }
+    }
+  }
+  .calltoaction2 {
+    height: 60vh;
+
+    .call-title {
+      margin-top: 12rem;
+
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .fixed-nav {
+    height: 6.5rem;
+  }
+  .book {
+    .container {
+      .moto {
+        display: flex;
+        margin-left: 12rem;
+      }
+    }
+  }
+  .book-room {
+ 
+    .container {
+      .rooms {
+        grid-template-columns: 1fr 1fr 1fr;
+        .room {
+         
+          img {
+          
+            width: 20rem;
+          }
+          .room-des {
+            text-align: center;
+            h3 {
+              margin-top: 2rem;
+              font-size: 1.4rem;
+            
+            }
+            p {
+              font-size: 1.2rem;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+      .more-btn {
+        
+        margin-top: 5rem;
+  
+        img {
+          width: 3rem;
+        }
+      }
+    }
+  }
+}
+@include responsive($xxl) {
+  .book {
+    .container {
+      .moto {
+        display: flex;
+     
+        margin-left: 20rem;
+
+     .line{
+       margin-top: 5rem;
+
+     }
+        .back-img {
+          margin-top: 0rem;
+          // margin-left: -.1rem;
+          img {
+            width: 10rem;
+          }
+        }
+      }
+
+      .book-form {
+        margin-top: 4rem;
+        .form-group {
+          .grid {
+            display: flex;
+            // div {
+            //   .controls {
+
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+}
