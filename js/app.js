@@ -30,7 +30,7 @@ if (window.innerWidth > 1152) {
     if (scorllheight > navheight) {
       menu.innerHTML = `<img src="./Image/menu.svg" alt="" />`;
 
-      logo.innerHTML = `<a href="./index.html"><img src="./Image/Logo1.svg" alt="Lalibella-logo" /> </a>`;
+      logo.innerHTML = `<a href="./index"><img src="./Image/Logo1.svg" alt="Lalibella-logo" /> </a>`;
       nav.classList.add("fixed-nav");
       links.forEach(link => {
         link.style.color = '#252A37'
@@ -38,7 +38,7 @@ if (window.innerWidth > 1152) {
 
 
     } else {
-      logo.innerHTML = `<a href="./index.html"><img src="./Image/Logo1.svg" alt="Lalibella-logo" />  </a>`;
+      logo.innerHTML = `<a href="./index"><img src="./Image/Logo1.svg" alt="Lalibella-logo" />  </a>`;
       nav.classList.remove("fixed-nav");
       menu.innerHTML = ` <img src="./Image/menu.svg" class="ham" alt="" />`;
       links.forEach(link => {
@@ -55,12 +55,12 @@ if (window.innerWidth > 1152) {
     if (scorllheight > navheight) {
       menu.innerHTML = `<img src="./Image/menu.svg"  alt="" />`;
 
-      logo.innerHTML = `<a href="./index.html"><img src="./Image/Logo1.svg" alt="Lalibella-logo" /> </a>`;
+      logo.innerHTML = `<a href="./index"><img src="./Image/Logo1.svg" alt="Lalibella-logo" /> </a>`;
       nav.classList.add("fixed-nav");
 
 
     } else {
-      logo.innerHTML = `<a href="./index.html"><img src="./Image/Logo1.svg" alt="Lalibella-logo" />  </a>`;
+      logo.innerHTML = `<a href="./index"><img src="./Image/Logo1.svg" alt="Lalibella-logo" />  </a>`;
       nav.classList.remove("fixed-nav");
       menu.innerHTML = ` <img src="./Image/menu.svg" alt="" />`;
 

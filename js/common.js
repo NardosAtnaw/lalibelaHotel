@@ -2,7 +2,7 @@ function header(){
   const header = document.querySelector('.book-header')
   header.innerHTML = `        <div class="container">
   <section class="nav">
-    <a class="logo" href="index.html"
+    <a class="logo" href="index"
       ><img src="./Image/Logo1.svg" alt="Lalibella-logo"
     /></a>
 
@@ -11,11 +11,11 @@ function header(){
         <i class="bx bx-x bx-md"></i>
       </div> 
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li><a href="restaurant.html">Restuarant and Bar</a></li>
-        <li><a href="special.html">Special Offer</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="book">Book</a></li>
+        <li><a href="restaurant">Restuarant and Bar</a></li>
+        <li><a href="special">Special Offer</a></li>
+        <li><a href="about">About Us</a></li>
     
       </ul>
     </div>
@@ -33,7 +33,7 @@ function footer(){
     <img src="./Image/Logo1.svg" alt="" />
 
     <div class="footer-links">
-      <a href="index.html">Home</a>
+      <a href="index">Home</a>
       <a href="#">Book</a>
       <a href="#">Restaurant and Bar</a>
       <a href="#">Special Offer</a>
