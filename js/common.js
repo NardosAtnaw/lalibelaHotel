@@ -48,7 +48,7 @@ function footer(){
       Ea eiusmod sit enim pariatur adipisicing nisi elit tempor cupidatat
       deserunt et irure nulla. Aliqua labore cupidatat nulla magna
       exercitation.
-      <a href="#"><img src="./Image/phone.svg" alt="" />+25116614917/+251116615522</a>
+      <a href="#"><img src="./Image/phone.svg" alt="" />+251116614917/ +251116615522</a>
       <a href="#"
         ><img
           src="./Image/insta.svg"
