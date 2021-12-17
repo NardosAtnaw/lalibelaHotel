@@ -35,6 +35,7 @@
           display: flex;
           justify-content: right;
           color: $thrid-color;
+          margin-bottom: 1rem;
         }
 
         ul {
@@ -46,10 +47,10 @@
           justify-content: space-around;
           height: 50%;
 
-          padding-left: 3rem;
+          // padding-left: 3rem;
           list-style: none;
           li {
-            margin-bottom: 0.51rem;
+            margin-bottom: 1rem;
             a {
               color: $thrid-color;
               font-size: 1rem;
@@ -198,11 +199,11 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   .container {
-    display: flex;
+    // display: flex;
     .rooms {
       display: grid;
       place-items: center;
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr 1fr ;
       gap: 2rem;
       .room {
        

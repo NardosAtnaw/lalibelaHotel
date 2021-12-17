@@ -34,28 +34,28 @@ function footer(){
 
     <div class="footer-links">
       <a href="index">Home</a>
-      <a href="#">Book</a>
-      <a href="#">Restaurant and Bar</a>
-      <a href="#">Special Offer</a>
+      <a href="book">Book</a>
+      <a href="restaurant">Restaurant and Bar</a>
+      <a href="special">Special Offer</a>
 
-      <a href="#">Contact Us</a>
-      <a href="#">About Us</a>
+      <a href="book">Contact Us</a>
+      <a href="about">About Us</a>
     </div>
   </div>
   <div class="footer-contact">
     <h2>Contact Us</h2>
     <p>
-      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor cupidatat
-      deserunt et irure nulla. Aliqua labore cupidatat nulla magna
-      exercitation.
-      <a href="#"><img src="./Image/phone.svg" alt="" />+251116614917/ +251116615522</a>
-      <a href="#"
+    Haven’t found what you were looking for?
+    Contact online/call us
+    
+      <a href="#"><img src="./Image/phone.svg" alt="" /> +251 116614917 | +251 116615522</a>
+      <a href="https://www.instagram.com/lalibelahotel/"
         ><img
           src="./Image/insta.svg"
           alt=""
         />Instagram/lalibellahotel/</a
       >
-      <a href="#"
+      <a href="https://www.facebook.com/Lalibela_Hotel/"
         ><img
           src="./Image/facebook.svg"
           alt=""
@@ -69,10 +69,9 @@ function footer(){
   <div class="footer-about">
     <h2>About Us</h2>
     <p>
-      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor cupidatat
-      deserunt et irure nulla. Aliqua labore cupidatat nulla magna
-      exercitation.
-      <a href="#"
+    Lalibela Hotel thrives to give its guests a contemporary take on cultural living. Our hotel is positioned at
+    proximity to shopping destinations, sightseeing spots and travel hubs in the city of Addis Ababa.
+      <a href="https://goo.gl/maps/6g2nLWUAdhYZDSdu8"
         ><img src="./Image/location.svg" alt="" />Bole Addis Ababa,
         Ethiopia</a
       >

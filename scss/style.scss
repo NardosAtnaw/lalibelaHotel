@@ -39,6 +39,7 @@
           display: flex;
           justify-content: right;
           color: $thrid-color;
+          margin-bottom: 1rem;
         }
 
         ul {
@@ -50,10 +51,10 @@
           justify-content: space-around;
           height: 50%;
 
-          padding-left: 3rem;
+          // padding-left: 3rem;
           list-style: none;
           li {
-            margin-bottom: 0.51rem;
+            margin-bottom: 1rem;
             a {
               color: $thrid-color;
               font-size: 1rem;
@@ -273,6 +274,7 @@
         }
       }
       .restuarant-desc {
+        width: 100%;
         h3 {
           color: $primary-color;
           margin-top: 1rem;
@@ -303,6 +305,7 @@
         }
       }
       .bed-desc {
+        width: 100%;
         h3 {
           color: $primary-color;
           margin-top: 1rem;
@@ -465,49 +468,12 @@
             }
           }
         }
-        .book-form {
-          display: block;
-          place-items: center;
-          .book-info{
-            // margin-top: 2rem;
-            text-align: center;
-            font-size: .8rem;
-            color:#fff;
-          }
-          .form-group {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-            .grid {
-              div {
-                display: grid;
-                place-items: center;
-                .controls {
-                  display: flex;
-                  margin-top: 1rem;
-                  .floatLabel {
-                    border: none;
-                    padding: 8px 8px;
-                    width: 12rem;
-                    height: 3rem;
-                    background-color: #fff;
-                  }
-                }
-              }
-            }
-          }
-          .btn {
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-          }
-        }
+       
       }
     }
   }
   .fixed-nav {
-    height: 5.5rem;
+    height: 6rem;
   }
   .image-loop {
     margin-top: -33rem;
@@ -595,7 +561,7 @@
         .restuarant-image {
           img {
             padding-top: 4rem;
-            width: 130rem;
+            width: 50rem;
           }
         }
         .restuarant-desc {
@@ -620,7 +586,7 @@
         .bed-image {
           img {
             padding-top: 4rem;
-            width: 130rem;
+            width: 50rem;
           }
         }
         .bed-desc {
@@ -664,6 +630,77 @@
   }
 }
 @include responsive($lg) {
+  .home-header {
+    .container {
+      img {
+        margin-top: 1rem;
+        width: 12rem;
+      }
+
+      .moto {
+        display: grid;
+        place-items: center;
+        margin-top: 8rem;
+        .line {
+          display: flex;
+          .moto-img {
+            img {
+              height: 4rem;
+            }
+          }
+          .moto-des {
+            h4 {
+              margin-left: 0.5rem;
+              font-size: 2rem;
+            }
+          }
+        }
+        .book-form {
+          display: block;
+          place-items: center;
+          .book-info{
+            // margin-top: 2rem;
+            text-align: center;
+            font-size: .8rem;
+            color:#fff;
+          }
+          .form-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            .grid {
+              
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr 1fr;
+              
+              div {
+                display: grid;
+                place-items: center;
+                .controls {
+                  display: flex;
+                  margin-top: 1rem;
+                  .floatLabel {
+                    border: none;
+                    padding: 8px 8px;
+                    width: 12rem;
+                    height: 3rem;
+                    background-color: #fff;
+                  }
+                }
+              }
+            }
+          }
+          .grid-btn{
+            justify-content: center;
+            margin-top: 2rem;
+          }
+        }
+        .phone-btn{
+          display: none;
+        }
+      }
+    }
+  }
   .image-loop {
     margin-top: -43rem;
   }
@@ -686,6 +723,7 @@
     .container {
       .restuarant-container {
         .restuarant-desc {
+          width: 100%;
           h3 {
             font-size: 1.5rem;
           }
@@ -697,6 +735,7 @@
 
       .bed-container {
         .bed-desc {
+          width: 100%;
           h3 {
             margin-top: 4rem;
             font-size: 1.5rem;
@@ -825,9 +864,10 @@
       }
     }
   }
-  .image-loop {
-    margin-top: -52rem;
-  }
+  // .image-loop {
+  //   // margin-top: -52rem;
+ 
+  // }
   .fixed-nav {
     height: 6.5rem;
   }

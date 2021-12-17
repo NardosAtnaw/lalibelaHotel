@@ -982,6 +982,7 @@ body {
   display: flex;
   justify-content: right;
   color: #FBEEE3;
+  margin-bottom: 1rem;
 }
 
 .book-header .container .nav .nav-container ul {
@@ -990,12 +991,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 50%;
-  padding-left: 3rem;
   list-style: none;
 }
 
 .book-header .container .nav .nav-container ul li {
-  margin-bottom: 0.51rem;
+  margin-bottom: 1rem;
 }
 
 .book-header .container .nav .nav-container ul li a {
@@ -1154,14 +1154,10 @@ body {
   margin-bottom: 2rem;
 }
 
-.book-room .container {
-  display: flex;
-}
-
 .book-room .container .rooms {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -1595,6 +1591,10 @@ body {
   padding-top: 4rem;
 }
 
+.restuarant1 .container .restuarant-container .restuarant-desc {
+  width: 100%;
+}
+
 .restuarant1 .container .restuarant-container .restuarant-desc h3 {
   color: #252A37;
   margin-top: 1rem;
@@ -1620,6 +1620,10 @@ body {
 
 .restuarant1 .container .bed-container .bed-image img {
   padding-top: 3rem;
+}
+
+.restuarant1 .container .bed-container .bed-desc {
+  width: 100%;
 }
 
 .restuarant1 .container .bed-container .bed-desc h3 {
@@ -2237,7 +2241,7 @@ body {
     width: 25rem;
   }
   .events .container .event-all .wedding .wedding-desc {
-    width: 75%;
+    width: 85%;
     margin-top: 4rem;
     margin-left: -3rem;
   }
@@ -2267,7 +2271,7 @@ body {
     width: 25rem;
   }
   .events .container .event-all .outside-event .outside-desc {
-    width: 75%;
+    width: 85%;
     margin-top: 4rem;
     margin-left: -3rem;
   }
@@ -2416,7 +2420,6 @@ body {
   }
   .events .container .event-all {
     margin-left: 10rem;
-    margin-right: 10rem;
   }
   .events .container .event-all .wedding {
     display: flex;
@@ -2521,6 +2524,7 @@ body {
   display: flex;
   justify-content: right;
   color: #FBEEE3;
+  margin-bottom: 1rem;
 }
 
 .home-header .container .nav .nav-container ul {
@@ -2528,12 +2532,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 50%;
-  padding-left: 3rem;
   list-style: none;
 }
 
 .home-header .container .nav .nav-container ul li {
-  margin-bottom: 0.51rem;
+  margin-bottom: 1rem;
 }
 
 .home-header .container .nav .nav-container ul li a {
@@ -2756,6 +2759,10 @@ body {
   padding-top: 4rem;
 }
 
+.restuarant .container .restuarant-container .restuarant-desc {
+  width: 100%;
+}
+
 .restuarant .container .restuarant-container .restuarant-desc h3 {
   color: #252A37;
   margin-top: 1rem;
@@ -2781,6 +2788,10 @@ body {
 
 .restuarant .container .bed-container .bed-image img {
   padding-top: 3rem;
+}
+
+.restuarant .container .bed-container .bed-desc {
+  width: 100%;
 }
 
 .restuarant .container .bed-container .bed-desc h3 {
@@ -2950,43 +2961,8 @@ body {
     margin-left: 0.5rem;
     font-size: 2rem;
   }
-  .home-header .container .moto .book-form {
-    display: block;
-    place-items: center;
-  }
-  .home-header .container .moto .book-form .book-info {
-    text-align: center;
-    font-size: .8rem;
-    color: #fff;
-  }
-  .home-header .container .moto .book-form .form-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  .home-header .container .moto .book-form .form-group .grid div {
-    display: grid;
-    place-items: center;
-  }
-  .home-header .container .moto .book-form .form-group .grid div .controls {
-    display: flex;
-    margin-top: 1rem;
-  }
-  .home-header .container .moto .book-form .form-group .grid div .controls .floatLabel {
-    border: none;
-    padding: 8px 8px;
-    width: 12rem;
-    height: 3rem;
-    background-color: #fff;
-  }
-  .home-header .container .moto .book-form .btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
   .fixed-nav {
-    height: 5.5rem;
+    height: 6rem;
   }
   .image-loop {
     margin-top: -33rem;
@@ -3048,7 +3024,7 @@ body {
   }
   .restuarant .container .restuarant-container .restuarant-image img {
     padding-top: 4rem;
-    width: 130rem;
+    width: 50rem;
   }
   .restuarant .container .restuarant-container .restuarant-desc h3 {
     margin-top: 4rem;
@@ -3068,7 +3044,7 @@ body {
   }
   .restuarant .container .bed-container .bed-image img {
     padding-top: 4rem;
-    width: 130rem;
+    width: 50rem;
   }
   .restuarant .container .bed-container .bed-desc h3 {
     margin-top: 4rem;
@@ -3097,6 +3073,65 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  .home-header .container img {
+    margin-top: 1rem;
+    width: 12rem;
+  }
+  .home-header .container .moto {
+    display: grid;
+    place-items: center;
+    margin-top: 8rem;
+  }
+  .home-header .container .moto .line {
+    display: flex;
+  }
+  .home-header .container .moto .line .moto-img img {
+    height: 4rem;
+  }
+  .home-header .container .moto .line .moto-des h4 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+  }
+  .home-header .container .moto .book-form {
+    display: block;
+    place-items: center;
+  }
+  .home-header .container .moto .book-form .book-info {
+    text-align: center;
+    font-size: .8rem;
+    color: #fff;
+  }
+  .home-header .container .moto .book-form .form-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .home-header .container .moto .book-form .form-group .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .home-header .container .moto .book-form .form-group .grid div {
+    display: grid;
+    place-items: center;
+  }
+  .home-header .container .moto .book-form .form-group .grid div .controls {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .home-header .container .moto .book-form .form-group .grid div .controls .floatLabel {
+    border: none;
+    padding: 8px 8px;
+    width: 12rem;
+    height: 3rem;
+    background-color: #fff;
+  }
+  .home-header .container .moto .book-form .grid-btn {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .home-header .container .moto .phone-btn {
+    display: none;
+  }
   .image-loop {
     margin-top: -43rem;
   }
@@ -3109,11 +3144,17 @@ body {
   .footer-general .container .footer-logo .footer-links {
     grid-template-columns: repeat(2, 1fr);
   }
+  .restuarant .container .restuarant-container .restuarant-desc {
+    width: 100%;
+  }
   .restuarant .container .restuarant-container .restuarant-desc h3 {
     font-size: 1.5rem;
   }
   .restuarant .container .restuarant-container .restuarant-desc p {
     font-size: 1.2rem;
+  }
+  .restuarant .container .bed-container .bed-desc {
+    width: 100%;
   }
   .restuarant .container .bed-container .bed-desc h3 {
     margin-top: 4rem;
@@ -3216,9 +3257,6 @@ body {
   }
   .home-header .container .moto .book-form .form-group .grid {
     display: flex;
-  }
-  .image-loop {
-    margin-top: -52rem;
   }
   .fixed-nav {
     height: 6.5rem;
